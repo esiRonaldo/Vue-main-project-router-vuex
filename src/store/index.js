@@ -1,14 +1,16 @@
 import { createStore } from 'vuex';
-import coachesModule from './coaches/index.js';
+
+import coachesModule from './modules/coaches/index.js';
+import requestsModule from './modules/requests/index.js';
 
 const store = createStore({
   modules: {
-    coaches: coachesModule, // this can be shortened if the key and value are the same
-    //requestsModule,
+    coaches: coachesModule,
+    requests: requestsModule,
   },
   state() {
     return {
-      userId: 'c3', // temporary hardcoded user ID
+      userId: 'c3',
     };
   },
   getters: {
@@ -17,4 +19,5 @@ const store = createStore({
     },
   },
 });
+
 export default store;

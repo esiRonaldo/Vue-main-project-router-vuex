@@ -1,3 +1,3 @@
 <template>
-    <div>CoachRegisteration</div>
+    <div>404 - Page Not Found!</div>
 </template>

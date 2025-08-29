@@ -36,7 +36,7 @@ export default {
         },
         rate() {
             console.log(this.selectedCoach);
-            return this.selectedCoach.rate;
+            return this.selectedCoach.hourlyRate;
         },
         areas() {
             return this.selectedCoach.areas;
